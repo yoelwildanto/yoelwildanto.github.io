@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <form id="signup">
+            <div>
+                <label for="nama">Nama :</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div>
+                <label for="css">CSS</label>
+                <input type="radio" name="fav_lang" id="fav_lang" value="css">
+                <label for="javascript" >Javascript</label>
+                <input type="radio" name="fav_lang" id="fav_lang">
+            </div>
+            <div>
+                <button type="submit" onclick="register()">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+
+
+</body>
+</html>
+
+<script>
+    function register(){
+        const forms =document.getElementById("signup")
+        const nama = forms.elements.nama.value;
+        const fav = document.querySelector("Input[name=fav_lang]:checked").value;
+        // const fav1 = 
+
+        alert (`Hello ${nama} your favorite language is ${fav}`)
+    }
+</script>

@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{color: red;}
+        .mobil{color:blue}
+        #avanza {color: greenyellow;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- unordered list -->
+    <h1>Daftar Belajar</h1>
+    <ul>
+        <li>Beras</li>
+        <li>Minyak Goreng</li>
+        <li>Gula</li>
+    </ul>
+<!-- orderedlist -->
+    <h2>Ranking barang</h2>
+    <ol>
+        <li>Beras</li>
+        <li>Minyak Goreng</li>
+        <li>Gula</li>
+    </ol>
+
+    <table>
+        <!-- table row -->
+        <tr> 
+            <!-- table head -->
+            <th>Nama</th> 
+            <th>TTL</th>
+        </tr>
+        <tr>
+            <!-- table data -->
+            <td>Galih</td>
+            <td>Jakarta, 25 jan 2000</td>
+        </tr>
+        <tr>
+            <td>Galih</td>
+            <td>Jakarta, 25 jan 2000</td>
+        </tr>
+    </table>
+    
+    <table>
+        <!-- table row -->
+        <tr> 
+            <!-- table head -->
+            <th>Nama</th> 
+            <th>TTL</th>
+        </tr>
+        <tr>
+            <!-- merge column -->
+            <td colspan="2">
+                <center>Galih</center>
+            </td>
+        </tr>
+
+        <table>
+            <tr>
+                <!-- merge row -->
+                <th rowspan="2">Jakarta</th>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </table>
+
+        <p>
+            <a href="">Halaman satu</a>
+        </p>
+        <p>
+            <a href="" target="_blank">
+                halaman index
+            </a>
+        </p>
+<!-- img -->
+        <img src="../asset/Robin1.png" alt="robin" style="height: 300px;">
+
+        <figure>
+            <img src="../asset/Robin2.png" alt="robin2" style="height: 300px;">
+            <figcaption>Robin</figcaption>
+        </figure>
+
+        <!-- input -->
+        <input type="text" placeholder="insert">
+        <input type="password" placeholder="password">
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="number" min="1" max="10" placeholder="number">
+        <input type="submit" value="Send">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+
+        <button type="button" >Submit</button>
+        <button type="button" onclick="doSomething()">
+        Apply
+        </button>
+
+        <!-- select -->
+        <p>Whats your favorite color?</p>
+        <select name="" id="">
+            <option value="">Red</option>
+            <option value="">Blue</option>
+            <option value="">Yellow</option>
+        </select>
+        <p>Whats your favorite food?</p>
+        <select name="" id="">
+            <!-- selected  untuk yang ditampilin-->
+            <option selected>b2</option>
+            <option value="">mie ayam</option>
+            <option value="">ayam bakar</option>
+        </select>
+
+        <!-- label -->
+        <p>
+            <!-- <label for="user">Username</label> -->
+            <input type="text" name="user" id=""placeholder="Username">
+        </p>
+
+        <p>
+            <!-- <label for="pass">Password</label> -->
+            <input type="password" name="pass" id="" placeholder="Password">
+        </p>
+
+        <!-- fieldset -->
+        <fieldset>
+            <legend>Data Diri</legend>
+            <p>
+                <label for="nama">Nama:</label>
+                <input type="text" name="nama" id="">
+            </p>
+            <p>
+                <label for="usia"> Usia: </label>
+                <input type="number" name="usia" id="">
+            </p>
+        </fieldset>
+
+        <!-- division -->
+        <div>Division1</div>
+        <div>Division2</div>
+        <div>Division3</div>
+        <p class="mobil" id="avanza">ini Avanza</p>
+        <p class="mobil">benz</p>
+</body>
+</html>
